@@ -1,10 +1,9 @@
 import {View, Text} from 'react-native';
-const NewsScreen = () => {
+const NewsTab = () => {
     return (
         <View>
             <Text>News</Text>
         </View>
     )
 }
-
-export default NewsScreen;
+export default NewsTab;

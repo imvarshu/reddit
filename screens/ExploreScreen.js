@@ -1,10 +1,9 @@
 import {View, Text} from 'react-native';
-const ExploreTab = () => {
+const ExploreScreen = () => {
     return (
         <View>
             <Text>Explore</Text>
         </View>
     )
 }
-
-export default ExploreTab;
+export default ExploreScreen;

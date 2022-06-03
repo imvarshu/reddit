@@ -1,11 +1,16 @@
-import {View, Text} from 'react-native';
-import Feeds from '../components/Feeds';
-const HomeScreen = () => {
-    return (
-        <View>
-           <Feeds/>
-        </View>
-    )
-}
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import HomeTab from './HomeTab';
+import NewsTab from './NewsTab';
+import PopulatTab from './PopularTab';
 
-export default HomeScreen;
+const Tab = createMaterialTopTabNavigator();
+
+export default function HomeScreen() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeTab} />
+      <Tab.Screen name="News" component={NewsTab} />
+      <Tab.Screen name="Popular" component={PopulatTab} />
+    </Tab.Navigator>
+  );
+}

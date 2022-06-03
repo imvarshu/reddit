@@ -1,10 +1,9 @@
 import {View, Text} from 'react-native';
-const PopularScreen = () => {
+const PopulatTab = () => {
     return (
         <View>
             <Text>Popular</Text>
         </View>
     )
 }
-
-export default PopularScreen;
+export default PopulatTab;
