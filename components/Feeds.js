@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react';
 import { FlatList } from 'react-native';
 import FeedItems from './FeedItems';
 
-const Feeds = () => {
+const Feeds = (props) => {
     const [posts,setPosts] = useState([]);
 
     useEffect(()=> {
@@ -12,10 +12,10 @@ const Feeds = () => {
     const fetchPosts = () => {
         fetch('https://www.reddit.com/r/pics.json')
         .then(response => response.json())
-        .then((res) => {
+        .then(res => {
             setPosts(res.data.children)
         })
-        .catch((error) => {
+        .catch(error => {
             console.log(error);
         })
     }

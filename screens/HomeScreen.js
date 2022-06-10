@@ -8,7 +8,7 @@ const Tab = createMaterialTopTabNavigator();
 export default function HomeScreen() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeTab} />
+      <Tab.Screen name="HomeTab" component={HomeTab} />
       <Tab.Screen name="News" component={NewsTab} />
       <Tab.Screen name="Popular" component={PopulatTab} />
     </Tab.Navigator>

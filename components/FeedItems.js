@@ -11,7 +11,7 @@ const FeedItems = ({item}) => {
    const thumbnail = preview?.images[0]?.source ?? null;
     const media_width = Dimensions.get('window').width - (2*card_padding);
     const media_height = thumbnail && (thumbnail.height/thumbnail.width) * media_width;
-    console.log(moment().format());
+    // console.log(moment().format());
     return (
         <View style={{padding: card_padding, backgroundColor: '#fff', marginBottom: 10}}>
             <View style={{flexDirection:'row'}}>
